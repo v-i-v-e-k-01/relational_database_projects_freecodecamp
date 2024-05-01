@@ -2,7 +2,6 @@
  1. Celestial Bodies Database Project 
   - Database dump :                                        ./Celestial Bodies/universe.sql
   - Some sample of Commands executed during project :      ./Celestial Bodies/sample_commands.sql
-  - 
  
  2. Worldcup Database Project
   - Database dump :                 ./Worldcup Database/worldcup.sql
