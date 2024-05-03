@@ -38,3 +38,7 @@ echo "$($PSQL "SELECT DISTINCT(course) FROM courses LEFT JOIN majors_courses USI
 
 echo -e "\nList of courses, in alphabetical order, with only one student enrolled:"
 echo "$($PSQL "SELECT course FROM courses LEFT JOIN majors_courses USING(course_id) LEFT JOIN students USING(major_id) GROUP BY course HAVING COUNT(student_id)=1  ORDER BY course")"
+
+# command to create a dump of database into a .sql file: pg_dump -cC --inserts -U freecodecamp students > students.sql
+
+# command to rebuild database from a .sql dump created earlier: psql -U postgres < students.sql
